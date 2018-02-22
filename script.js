@@ -25,5 +25,5 @@ function changeColor(){
   hexText.innerHTML = nextHex;
 }
 
-setInterval(changeColor,2500);
+setInterval(changeColor,1500);
 

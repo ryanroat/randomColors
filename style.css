@@ -5,6 +5,7 @@
 
 :root {
   --box-color: rgb(255, 111 ,105);
+  --text-color: #282828;
 }
 
 #color-box{
@@ -15,6 +16,7 @@
 }
 
 #color-box h2{
+  color: var(--text-color);
   font-size: 3em;
   text-align: center;
 }

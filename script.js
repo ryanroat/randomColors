@@ -17,9 +17,26 @@ function changeColor(){
     nextHex = '0'+nextHex;
   }
   nextHex = '#'+nextHex.toUpperCase();
-  console.log(nextColor, nextHex, hexLength);
+  
 
   root.style.setProperty('--box-color', nextHex);
+
+  var c = nextHex.substring(1);      // strip #
+  var rgb = parseInt(c, 16);   // convert rrggbb to decimal
+  var r = (rgb >> 16) & 0xff;  // extract red
+  var g = (rgb >>  8) & 0xff;  // extract green
+  var b = (rgb >>  0) & 0xff;  // extract blue
+
+  var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709
+
+  console.log(nextColor, nextHex, hexLength, luma);
+
+  if (luma < 95) {
+    // pick a different colour
+    root.style.setProperty('--text-color', '#C0C0C0');
+} else {
+  root.style.setProperty('--text-color', '#282828');
+}
 
   var hexText = document.querySelector('h2')
   hexText.innerHTML = nextHex;

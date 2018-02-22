@@ -20,6 +20,9 @@ function changeColor(){
   console.log(nextColor, nextHex, hexLength);
 
   root.style.setProperty('--box-color', '#'+nextHex);
+
+  var hexText = document.querySelector('h2')
+  hexText.innerHTML = nextHex;
 }
 
 setInterval(changeColor,2500);

@@ -16,10 +16,10 @@ function changeColor(){
   for (var i=0; i < (6-hexLength); i++) {
     nextHex = '0'+nextHex;
   }
-
+  nextHex = '#'+nextHex.toUpperCase();
   console.log(nextColor, nextHex, hexLength);
 
-  root.style.setProperty('--box-color', '#'+nextHex);
+  root.style.setProperty('--box-color', nextHex);
 
   var hexText = document.querySelector('h2')
   hexText.innerHTML = nextHex;

@@ -6,12 +6,15 @@
 :root {
   --box-color: rgb(255, 111 ,105);
   --text-color: #282828;
+  --box-border-color: #282828;
 }
 
 #color-box{
   padding: 50px;
   margin: 50px;
-  border-style: dashed;
+  border-style: double;
+  border-color: var(--box-border-color);
+  border-width: .5em;
   background-color: var(--box-color);
 }
 

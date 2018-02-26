@@ -35,11 +35,11 @@ function changeColor(){
     // pick a different colour
     root.style.setProperty('--text-color', '#C0C0C0');
     root.style.setProperty('--box-border-color', '#C0C0C0');
-    root.style.setProperty('--box-border-style', 'groove');
+    root.style.setProperty('--box-border-style', 'dashed');
   } else {
     root.style.setProperty('--text-color', '#282828');
     root.style.setProperty('--box-border-color', '#282828');
-    root.style.setProperty('--box-border-style', 'dashed');
+    root.style.setProperty('--box-border-style', 'double');
   }
   
   var hexText = document.querySelector('h2')

@@ -7,12 +7,13 @@
   --box-color: rgb(255, 111 ,105);
   --text-color: #282828;
   --box-border-color: #282828;
+  --box-border-style: dashed;
 }
 
 #color-box{
   padding: 50px;
   margin: 50px;
-  border-style: double;
+  border-style: var(--box-border-style);
   border-color: var(--box-border-color);
   border-width: .5em;
   background-color: var(--box-color);

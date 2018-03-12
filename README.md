@@ -1,4 +1,7 @@
 # randomColors
+
+http://ryanroat.net/rc/
+
 this project uses native css variables to manipulate the DOM to change the background color, text color and border color of a div/box
 
 numerical color value is randomly generated in javascript as a decimal and converted to a string hex code
